@@ -1,0 +1,26 @@
+meta {
+  name: añadir persona
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/personas
+  body: json
+  auth: none
+}
+
+params:query {
+  : 
+}
+
+body:json {
+  {
+    "name":"María",
+    "surname":"Valencia",
+    "picture": {
+      "large":"hsjdfks",
+      "thumbnail":"skdhlksd"
+    }
+  }
+}

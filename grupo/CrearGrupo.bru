@@ -1,0 +1,19 @@
+meta {
+  name: CrearGrupo
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:1337/api/auth/local
+  body: json
+  auth: none
+}
+
+body:json {
+  { 
+    "data": {
+      "name": "tarde"
+    }
+  }
+}

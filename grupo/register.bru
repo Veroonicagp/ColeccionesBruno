@@ -1,0 +1,19 @@
+meta {
+  name: register
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:1337/api/auth/local/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "juani@gmail.com",
+    "password":"123456juan",
+    "username": "juanito"
+  }
+}

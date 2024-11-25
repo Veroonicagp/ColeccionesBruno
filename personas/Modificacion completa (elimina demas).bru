@@ -1,0 +1,18 @@
+meta {
+  name: Modificacion completa (elimina demas)
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/personas/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"VeronicaCamboio",
+    "surname":"GP"
+  }
+}

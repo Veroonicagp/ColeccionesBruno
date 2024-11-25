@@ -1,0 +1,17 @@
+meta {
+  name: Modificar parcial
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3000/personas/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"JuanCambio"
+  }
+}

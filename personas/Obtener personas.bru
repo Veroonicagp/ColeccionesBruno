@@ -1,0 +1,15 @@
+meta {
+  name: Obtener personas
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/grupos?_embed=personas
+  body: none
+  auth: none
+}
+
+params:query {
+  _embed: personas
+}
